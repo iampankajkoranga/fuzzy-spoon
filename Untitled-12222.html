@@ -1,0 +1,250 @@
+<html>
+    <head>
+        <title> The Sparks Foundation TASK 1 </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body{
+            background-image:url("image.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+                }
+    </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm my-2">
+            <a class="navbar-brand ml-5" href="#">PANKAJ SINGH</a>
+
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <i class="fas fa-bars" style="color: #fff;font-size: 150%;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item "><a class="nav-link" href="contacthere.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>        
+
+        <header class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>THE SPARKS FOUNDATION</h1>
+                        <h2>#GripMar21</h2>
+                        <p>Task- Payment Gateway Integration </p>
+                        <h2>Pandemic has been rough for everyone</h2>
+                        <h2>Help us in saving these little ones</h2>
+                    </div>
+                </div>
+                <div class="col-12">
+                  <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_GnbrXRq527jXYL" async> </script> </form>
+                </div>
+            </div>
+        </header>
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/c252d9c8b4.js" crossorigin="anonymous"></script>
+    </body>
+    </html>
+    <html>
+        <head>
+            <title> The Sparks Foundation TASK 1 </title>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+            <link rel="stylesheet" href="style.css">
+            <style>
+                body{
+                background-image:url("contimage.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                    }
+            </style>
+        </head>
+        <body>
+            <nav class="navbar navbar-expand-sm my-2">
+                <a class="navbar-brand ml-5" href="#">Pankaj Singh</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <i class="fas fa-bars" style="color: #fff;font-size: 150%;"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="contacthere.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+    
+                <div class="container-contact100">
+                    <div class="wrap-contact100">
+                        <form class="contact100-form validate-form" data-netlify="true">
+                            <span class="contact100-form-title">
+                                Contact us
+                            </span>
+        
+                            <div class="wrap-input100 validate-input" data-validate = "Name is required" >
+                                <input class="input100" type="text" id="name" name="name" placeholder="Name">
+                                <span class="focus-input100"></span>
+                                <span class="symbol-input100">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                </span>
+                            </div>
+        
+                            <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz" >
+                                <input class="input100" type="text" id="email" name="email" placeholder="Email" >
+                                <span class="focus-input100"></span>
+                                <span class="symbol-input100">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                </span>
+                            </div>
+        
+                            <div class="wrap-input100 validate-input" data-validate = "Message is required" >
+                                <textarea class="input100" id="message"  name="message" placeholder="Message"></textarea>
+                                <span class="focus-input100"></span>
+                            </div>
+        
+                            <div class="container-contact100-form-btn">
+                                <button onclick="validation(),validateemail() " class="contact100-form-btn" >
+                                    Send
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+    
+                <script>
+                function validation()
+                {
+                     var name=document.getElementById("name").value;
+                     var email=document.getElementById("email").value;
+                     var message=document.getElementById("message").value;
+                     
+                     if(name=="")
+                     {
+                         alert("Please Enter Name");
+                     }
+                     else if(email=="")
+                     {
+                         alert("Please Enter Email");
+                     }
+                
+                     else if(message=="")
+                     {
+                        alert("Please Write Message");
+                         
+                     }
+                     else 
+                     {
+                         alert("Message Send Successfully");
+                     }
+                }
+    
+     
+    
+            if(validateemail() !== true){
+                print( validation());
+            }
+                </script>
+    
+                <script >
+                $('.js-tilt').tilt({
+                    scale: 1.1
+                })
+            </script>
+       
+            <!-- jQuery library -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <!-- Popper JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+            <!-- Latest compiled JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+             <script src="main.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous"></script>
+        <script>
+            (function ($) {
+    "use strict";
+
+    
+    /*==================================================================
+    [ Validate ]*/
+    var input = $('.validate-input .input100');
+
+    $('.validate-form').on('submit',function(){
+        var check = true;
+
+        for(var i=0; i<input.length; i++) {
+            if(validate(input[i]) == false){
+                showValidate(input[i]);
+                check=false;
+            }
+        }
+
+        return check;
+    });
+
+
+    $('.validate-form .input100').each(function(){
+        $(this).focus(function(){
+           hideValidate(this);
+        });
+    });
+
+    function validate (input) {
+        if($(input).attr('type') == 'email' || $(input).attr('name') == 'email') {
+            if($(input).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
+                return false;
+            }
+        }
+        else {
+            if($(input).val().trim() == ''){
+                return false;
+            }
+        }
+    }
+
+    function showValidate(input) {
+        var thisAlert = $(input).parent();
+
+        $(thisAlert).addClass('alert-validate');
+    }
+
+    function hideValidate(input) {
+        var thisAlert = $(input).parent();
+
+        $(thisAlert).removeClass('alert-validate');
+    }
+    
+    
+
+})(jQuery);
+        </script>
+        </body>
+        </html>
+        
+            <script >
+            $('.js-tilt').tilt({
+                scale: 1.1
+            })
+        </script>
+   
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+         <script src="main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous"></script>
+    </body>
+    </html>
+    <link rel="stylesheet" href="style.css">
+    
