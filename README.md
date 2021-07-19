@@ -1,1 +1,1 @@
-in this repository I created a webssite for payment gatway integratiion.
+In this repository I created a webssite for payment gatway integratiion.
