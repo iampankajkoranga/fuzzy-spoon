@@ -9,14 +9,14 @@ body
 }
 .navbar-nav li a{
     padding: 5px 9px;
-    color: #cc2121;
+    color: #ffffff;
     margin-right: 10px;
     transition: 0.5s ease;
 }   
 .navbar-nav .active a
 {
     color: #000000;
-    background-color: #095000;
+    background-color: #ffffff;
 }
 .navbar-nav li a:hover{
     color: #000000;
